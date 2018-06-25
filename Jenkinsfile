@@ -11,7 +11,7 @@ pipeline {
         ws(dir: 'c:\\\\workspace'){
            bat """
 echo %PATH%
-PATH=%PATH%;C:\Program Files (x86)\MSBuild\14.0\Bin\
+PATH=%PATH%;C:\\Program Files (x86)\\MSBuild\\14.0\\Bin
 build.cmd
           """
         }
