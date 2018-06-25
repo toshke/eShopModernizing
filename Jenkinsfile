@@ -2,7 +2,7 @@ pipeline {
   agent {
     node {
       label 'windows'
-      customWorkspace 'C:\eShopBuild'
+      customWorkspace 'C:\\eShopBuild'
     }
 
   }
