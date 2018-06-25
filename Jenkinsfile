@@ -22,7 +22,7 @@ build.cmd
     stage('pushtoecr'){
       steps {
         bat """docker tag eshop/modernizedmvc:latest 334818472548.dkr.ecr.ap-southeast-2.amazonaws.com/modernizedmvc:latest"""
-        powershell """Invoke-Expression -Command (Get-ECRLoginCommand -Region ap-southeast-2).Command
+        powershell """Invoke-Expression -Command (Get-ECRLoginCommand -ProfileName jenkins -Region ap-southeast-2).Command
         docker push 334818472548.dkr.ecr.ap-southeast-2.amazonaws.com/modernizedmvc:latest"""
        
       }
