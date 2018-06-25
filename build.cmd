@@ -14,4 +14,4 @@ msbuild eShopModernizedNTier\src\eShopWCFService\eShopWCFService.csproj /nologo 
 @copy /Y eShopModernizedMVCSolution\src\eShopModernizedMVC\Dockerfile deploy\mvc
 @copy /Y eShopModernizedWebFormsSolution\src\eShopModernizedWebForms\Dockerfile deploy\webforms
 @echo [93m Building docker images... [0m
-docker-compose -f docker-compose.yml -f docker-compose.override.yml build
+docker-compose -f docker-compose.yml -f docker-compose.override.yml build eshop.modernized.mvc
