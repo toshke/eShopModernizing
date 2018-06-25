@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        bat(script: 'build.cmd', returnStdout: true, returnStatus: true)
+        ws(dir: 'c:\\\\workspace')
+        bat 'build.cmd'
       }
     }
   }
